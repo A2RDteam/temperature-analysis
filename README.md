@@ -1,11 +1,14 @@
 # temperature-analysis
 
-some functions
+some functions:
+
 ReadCSV.GetDataBlock - read all data bloc to memory.
+
 arguments:
  blockCount - number of blocks to read. 12*120 - 12 month * 120 years
  blockSize - size of one block. In these dataset its 360 lines: (-90 - 90 degrees) * 2. every line is for 0.5 degree.
  emptyStr - is blocks separated with empty string? In current dataset blocks is separated.
+ 
 returns:
  3-dimension array [block, row, column] where block represents one month of one year (0 - 1440), row and columns represents square with 0.5 degree side
 
